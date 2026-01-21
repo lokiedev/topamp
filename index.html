@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Topamp</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body class="[ stack ] [ align-center text-light bg-dark ]">
+        <header class="w-full">
+            <div class="wrapper mx-auto">
+                <h1 class="m-0">Topamp</h1>
+                <p class="m-0">Convert squig.link PEQ To Poweramp</p>
+            </div>
+        </header>
+        <main class="w-full">
+            <div class="[ stack wrapper ] [ mx-auto ]">
+                <label for="preset-name-input">Preset name</label>
+                <input type="text" id="preset-name-input" class="text-input" />
+                <label for="squig-link-peq-input">squig.link PEQ</label>
+                <textarea
+                    id="squig-link-peq-input"
+                    class="text-input"
+                ></textarea>
+                <div>
+                    <button id="convert-button" class="button">convert</button>
+                    <button id="upload-button" class="button">from file</button>
+                    <input
+                        id="file-input"
+                        class="hidden"
+                        type="file"
+                        accept=".txt"
+                    />
+                </div>
+                <label for="poweramp-peq-output">Output</label>
+                <textarea
+                    id="poweramp-peq-output"
+                    class="text-input"
+                    readonly
+                ></textarea>
+                <button id="download-button" class="button">
+                    download json
+                </button>
+            </div>
+        </main>
+        <footer class="w-full">
+            <div class="[ wrapper ] [ mx-auto ]">
+                <p>© 2026 Topamp</p>
+            </div>
+        </footer>
+    </body>
+    <script type="module" src="./main.js"></script>
+</html>
