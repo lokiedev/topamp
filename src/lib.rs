@@ -35,8 +35,8 @@ impl FilterType {
     pub fn from_squig(filter: String) -> Result<Self, String> {
         match filter.to_ascii_lowercase().as_str() {
             "pk" => Ok(FilterType::Pk),
-            "lsq" => Ok(FilterType::Lsq),
-            "hsq" => Ok(FilterType::Hsq),
+            "lsq" | "lsc" => Ok(FilterType::Lsq),
+            "hsq" | "hsc" => Ok(FilterType::Hsq),
             _ => Err(format!(
                 "Type \"{}\" is not a valid squig.link filter type",
                 filter
