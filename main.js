@@ -37,7 +37,11 @@ convertButton.addEventListener("click", () => {
 
   if (!presetNameValue.trim() || !peqValue.trim()) return;
 
-  output.value = convert_to_poweramp(presetNameValue, peqValue);
+  try {
+    output.value = convert_to_poweramp(presetNameValue, peqValue);
+  } catch (e) {
+    output.value = e;
+  }
 });
 
 // Trigger hidden file input click
