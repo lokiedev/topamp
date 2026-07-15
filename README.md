@@ -1,3 +1,6 @@
+# Discontinued
+I didn't know that Poweramp already had a built-in feature for this. Too bad, my first instinct was to make it myself whenever I couldn't find a tool for something.
+
 # Topamp
 Topamp (meaning "To Poweramp") is a tool that converts a [squig.link](https://squig.link) Parametric Equalizer into a Poweramp preset using Rust WebAssembly. You can try it out at [lokiedev.github.io/topamp](https://lokiedev.github.io/topamp).
 
